@@ -1,7 +1,6 @@
 # Spring-Boot Ribbon
 
-This example demonstrates how you can use Netflix Ribbonwith Spring Boot
-
+This example demonstrates how you can use Netflix [Ribbon](https://github.com/Netflix/ribbon) with Spring Boot
 
 ### Building
 
