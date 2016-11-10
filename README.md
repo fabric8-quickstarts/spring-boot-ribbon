@@ -1,6 +1,10 @@
 # Spring-Boot Ribbon
 
-This example demonstrates how you can use Netflix [Ribbon](https://github.com/Netflix/ribbon) with Spring Boot
+This example demonstrates how you can use Netflix [Ribbon](https://github.com/Netflix/ribbon) and Hystrix with Spring Boot
+
+This example is related to `spring-boot-webmvc` which this example will call and output its response.
+In case the `spring-boot-webmvc` is not running then the Hystrix circuit breaker should detect this
+and return a fallback response.
 
 ### Building
 
@@ -16,7 +20,7 @@ The example can be run locally using the following Maven goal:
     mvn spring-boot:run
 
 
-### Running the example in fabric8
+### Running the example in Kubernetes
 
 It is assumed a running Kubernetes platform is already running. If not you can find details how to [get started](http://fabric8.io/guide/getStarted/index.html).
 
@@ -38,13 +42,19 @@ Then the following command will package your app and run it on Kubernetes:
 mvn fabric8:run
 ```
 
-To list all the running pods:
+To call the service from a web browser you need to append the context path `/hello` to the service URL, something like
 
-    oc get pods
+    http://192.168.99.100:31824/hello
 
-Then find the name of the pod that runs this quickstart, and output the logs from the running pods with:
+Depending on whether `spring-boot-webmvc` is running or not, then calling the service will return different response as
 
-    oc logs <name of pod>
+    Reply: Hello World!
+    
+.. will be returned when `spring-boot-webmvc` is running, and 
+     
+    Hello Fallback
+         
+.. is returned.         
 
 You can also use the [fabric8 developer console](http://fabric8.io/guide/console.html) to manage the running pods, and view logs and much more.
 

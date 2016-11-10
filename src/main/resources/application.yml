@@ -14,7 +14,7 @@ server:
 management:
   port: 8081
 
-#Enable / Disable Ribbon Http Client (disabling requires spring-cloud-netflix 1.1.0 (currently unreleased))
+#Enable / Disable Ribbon Http Client
 ribbon:
   http:
     client:
