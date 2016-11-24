@@ -32,7 +32,7 @@
     <!-- dependency versions -->
     <archaius.version>0.6.6</archaius.version>
     <camel.version>2.18.0</camel.version>
-    <fabric8.version>2.2.179</fabric8.version>
+    <fabric8.version>2.2.180</fabric8.version>
     <guava.version>19.0</guava.version>
     <hystrix.version>1.4.9</hystrix.version>
     <kubeflix.version>1.0.26</kubeflix.version>
