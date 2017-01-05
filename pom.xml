@@ -32,7 +32,7 @@
     <!-- dependency versions -->
     <archaius.version>0.6.6</archaius.version>
     <camel.version>2.18.1</camel.version>
-    <fabric8.version>2.2.183</fabric8.version>
+    <fabric8.version>2.2.190</fabric8.version>
     <guava.version>19.0</guava.version>
     <hystrix.version>1.4.9</hystrix.version>
     <kubeflix.version>1.0.26</kubeflix.version>
@@ -41,16 +41,16 @@
     <ribbon.version>2.1.2</ribbon.version>
     <rxjava.version>1.0.10</rxjava.version>
     <rxnetty.version>0.4.9</rxnetty.version>
-    <spring-boot.version>1.4.2.RELEASE</spring-boot.version>
-    <spring-boot-plugin.version>1.4.2.RELEASE</spring-boot-plugin.version>
+    <spring-boot.version>1.4.3.RELEASE</spring-boot.version>
+    <spring-boot-plugin.version>1.4.3.RELEASE</spring-boot-plugin.version>
     <spring-cloud-netflix.version>1.0.6.RELEASE</spring-cloud-netflix.version>
     <spring-cloud-kubernetes.version>0.0.16</spring-cloud-kubernetes.version>
     <turbine.version>1.0.0</turbine.version>
 
     <!-- maven plugin versions -->
-    <fabric8.maven.plugin.version>3.2.8</fabric8.maven.plugin.version>
-    <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
-    <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+    <fabric8.maven.plugin.version>3.2.12</fabric8.maven.plugin.version>
+    <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+    <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
   </properties>
 
   <dependencyManagement>
